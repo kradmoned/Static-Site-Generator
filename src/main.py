@@ -1,7 +1,5 @@
-from textnode import TextNode
-from textnode import TextType
+from prepare_dest import prepare_dest
 def main():
-    textnode: TextNode = TextNode("Hello", TextType.code_text,"Https://www.google.com")
-    print(textnode)
+    prepare_dest("static","public")
 if __name__ == "__main__":
     main()
